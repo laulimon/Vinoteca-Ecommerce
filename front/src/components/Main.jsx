@@ -37,8 +37,8 @@ class Main extends React.Component {
         const { allCategory } = this.props
         return (
             <div style={{ backgroundSize: "100%", height: "100%", width: "100%", backgroundImage: "url(https://i.imgur.com/nhwdpMQ.jpg)", backgroundRepeat: "no-repeat", backgroundAttachment: "fixed" }} >
-                <NavbarContainer />
 
+                <NavbarContainer />
                 <Switch>
                     <Route exact path="/" component={CarrouselContainer}></Route>
                     <Route exact path="/register" component={RegisterContainer}></Route>
@@ -59,9 +59,6 @@ class Main extends React.Component {
                     <Route exact path="/user/admin/editProduct" component={AdminAllwinesContainer}></Route>
                     <Route exact path="/user/admin/edit/:id" component={AdminSingleWinesContainer}></Route>
                     <Route exact path="/subcategory/:nombre" component={subCategoryContainer}></Route>
-
-
-
                     <Route exact path="/user/profile" component={UserProfileContainer}></Route>
                 </Switch>
                 <FooterContainer></FooterContainer>
