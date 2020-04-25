@@ -1,5 +1,29 @@
-const { Producto } = require("./models/index")
-const Categoria = require("./models/Categorias")
+const { Producto, Categoria, Usuario } = require("./models/index")
+
+Usuario.create({
+    nombre: "Super",
+    apellido: "Admin",
+    email: "superAdmin@gmail.com",
+    username: "SuperAdmin",
+    password: "123",
+    typoUsuario: "superAdmin"
+})
+Usuario.create({
+    nombre: "Laura",
+    apellido: "Limon",
+    email: "laura@gmail.com",
+    username: "Laura",
+    password: "123",
+    typoUsuario: "user"
+})
+    .then(console.log("se creo el super usario"))
+
+
+
+
+
+
+
 //-----------------------------CATEGORIAS-------------------------
 const categoria1 = Categoria.create({
 
@@ -17,6 +41,7 @@ const categoria4 = Categoria.create({
 
     nombre: "Carton"
 })
+
 
 
 //https://http2.mlstatic.com/espumante-eclat-reserva-extra-brut-bodega-caelum-y-la-maison-D_NQ_NP_640396-MLA31922573604_082019-O.webp
@@ -852,7 +877,7 @@ Producto.create({
     provincia: "Mendoza",
     alcohol: 14
 })
-
+// Rosado
 Producto.create({
     nombre: "L'Argentin de Malartic Rosado. 750 ml",
     descripcion: "Temperatura de servicio de este vino es entre 7º y 9º C, Potencial de guarda 2 años. Conservar en lugar fresco, oscuro, y sin vibraciones. Ideal para acompañar una Tarta invertida de mozzarella, tomate y albahaca con ensalada de rucula.",

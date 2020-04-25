@@ -7,57 +7,37 @@ Usuario.init({
     nombre: {
         type: S.STRING,
         allowNull: false,
-
     },
     apellido: {
         type: S.STRING,
         allowNull: false,
-
-
     },
     email: {
-
         type: S.STRING,
         allowNull: false,
         unique: true
-
     },
     fechaNacimiento: {
         type: S.DATE
-
-
     },
     domicilio: {
         type: S.STRING
-
-
     },
-
     username: {
         type: S.STRING,
         allowNull: false,
         unique: true
-
-
     },
     password: {
-
         type: S.STRING,
         allowNull: false,
-
-
     },
     typoUsuario: {
         type: S.STRING,
         defaultValue: "user"
-
-
     },
     salt: {
         type: S.STRING
-
-
-
     }
 
 
